@@ -1,0 +1,249 @@
+1:LVR:0:POS:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> 1
+2:LVR:0:NEG:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> -1
+3:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 |==> a < 0
+4:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 |==> a == 0
+5:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 |==> true
+6:LVR:0:POS:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> 1
+7:LVR:0:NEG:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> -1
+8:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:b <= 0 |==> b < 0
+9:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:b <= 0 |==> b == 0
+10:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:b <= 0 |==> true
+11:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 |==> a <= 0 != b <= 0
+12:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 |==> a <= 0
+13:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 |==> b <= 0
+14:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 |==> true
+15:LVR:0:POS:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> 1
+16:LVR:0:NEG:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:0 |==> -1
+17:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:c <= 0 |==> c < 0
+18:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:c <= 0 |==> c == 0
+19:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:c <= 0 |==> true
+20:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 || c <= 0 |==> (a <= 0 || b <= 0) != c <= 0
+21:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 || c <= 0 |==> a <= 0 || b <= 0
+22:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 || c <= 0 |==> c <= 0
+23:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:a <= 0 || b <= 0 || c <= 0 |==> true
+24:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@classifyTriangle(int,int,int):9:return "INVALID"; |==> <NO-OP>
+25:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b |==> a % b
+26:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b |==> a * b
+27:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b |==> a - b
+28:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b |==> a / b
+29:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c |==> a + b != c
+30:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c |==> a + b >= c
+31:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c |==> false
+32:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c |==> a % c
+33:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c |==> a * c
+34:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c |==> a - c
+35:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c |==> a / c
+36:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c > b |==> a + c != b
+37:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c > b |==> a + c >= b
+38:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + c > b |==> false
+39:COR:&&(boolean,boolean):==(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b |==> a + b > c == a + c > b
+40:COR:&&(boolean,boolean):FALSE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b |==> false
+41:COR:&&(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b |==> a + b > c
+42:COR:&&(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b |==> a + c > b
+43:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c |==> b % c
+44:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c |==> b * c
+45:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c |==> b - c
+46:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c |==> b / c
+47:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c > a |==> b + c != a
+48:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c > a |==> b + c >= a
+49:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:b + c > a |==> false
+50:COR:&&(boolean,boolean):==(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b && b + c > a |==> (a + b > c && a + c > b) == b + c > a
+51:COR:&&(boolean,boolean):FALSE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b && b + c > a |==> false
+52:COR:&&(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b && b + c > a |==> a + b > c && a + c > b
+53:COR:&&(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):11:a + b > c && a + c > b && b + c > a |==> b + c > a
+54:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@classifyTriangle(int,int,int):12:return "INVALID"; |==> <NO-OP>
+55:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b |==> a <= b
+56:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b |==> a >= b
+57:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b |==> false
+58:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:b == c |==> b <= c
+59:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:b == c |==> b >= c
+60:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:b == c |==> false
+61:COR:&&(boolean,boolean):==(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b && b == c |==> a == b == (b == c)
+62:COR:&&(boolean,boolean):FALSE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b && b == c |==> false
+63:COR:&&(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b && b == c |==> a == b
+64:COR:&&(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):15:a == b && b == c |==> b == c
+65:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@classifyTriangle(int,int,int):16:return "EQUILATERAL"; |==> <NO-OP>
+66:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b |==> a <= b
+67:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b |==> a >= b
+68:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b |==> false
+69:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == c |==> a <= c
+70:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == c |==> a >= c
+71:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == c |==> false
+72:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c |==> a == b != (a == c)
+73:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c |==> a == b
+74:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c |==> a == c
+75:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c |==> true
+76:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:b == c |==> b <= c
+77:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:b == c |==> b >= c
+78:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:b == c |==> false
+79:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c || b == c |==> (a == b || a == c) != (b == c)
+80:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c || b == c |==> a == b || a == c
+81:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c || b == c |==> b == c
+82:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):19:a == b || a == c || b == c |==> true
+83:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@classifyTriangle(int,int,int):20:return "ISOSCELES"; |==> <NO-OP>
+84:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a % a
+85:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a + a
+86:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a - a
+87:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a / a
+88:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b % b
+89:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b + b
+90:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b - b
+91:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b / b
+92:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b |==> a * a % (b * b)
+93:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b |==> a * a * (b * b)
+94:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b |==> a * a - b * b
+95:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b |==> a * a / (b * b)
+96:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c % c
+97:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c + c
+98:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c - c
+99:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c / c
+100:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c |==> a * a + b * b <= c * c
+101:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c |==> a * a + b * b >= c * c
+102:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c |==> false
+103:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a % a
+104:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a + a
+105:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a - a
+106:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a / a
+107:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c % c
+108:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c + c
+109:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c - c
+110:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c / c
+111:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c |==> a * a % (c * c)
+112:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c |==> a * a * (c * c)
+113:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c |==> a * a - c * c
+114:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c |==> a * a / (c * c)
+115:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b % b
+116:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b + b
+117:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b - b
+118:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b / b
+119:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c == b * b |==> a * a + c * c <= b * b
+120:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c == b * b |==> a * a + c * c >= b * b
+121:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + c * c == b * b |==> false
+122:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b |==> a * a + b * b == c * c != (a * a + c * c == b * b)
+123:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b |==> a * a + b * b == c * c
+124:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b |==> a * a + c * c == b * b
+125:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b |==> true
+126:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b % b
+127:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b + b
+128:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b - b
+129:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b |==> b / b
+130:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c % c
+131:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c + c
+132:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c - c
+133:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:c * c |==> c / c
+134:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c |==> b * b % (c * c)
+135:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c |==> b * b * (c * c)
+136:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c |==> b * b - c * c
+137:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c |==> b * b / (c * c)
+138:AOR:*(int,int):%(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a % a
+139:AOR:*(int,int):+(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a + a
+140:AOR:*(int,int):-(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a - a
+141:AOR:*(int,int):/(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a |==> a / a
+142:ROR:==(int,int):<=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c == a * a |==> b * b + c * c <= a * a
+143:ROR:==(int,int):>=(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c == a * a |==> b * b + c * c >= a * a
+144:ROR:==(int,int):FALSE(int,int):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:b * b + c * c == a * a |==> false
+145:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a |==> (a * a + b * b == c * c || a * a + c * c == b * b) != (b * b + c * c == a * a)
+146:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a |==> a * a + b * b == c * c || a * a + c * c == b * b
+147:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a |==> b * b + c * c == a * a
+148:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@classifyTriangle(int,int,int):23:a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a |==> true
+149:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@classifyTriangle(int,int,int):24:return "RIGHT ANGLED"; |==> <NO-OP>
+150:LVR:0:POS:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> 1
+151:LVR:0:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> -1
+152:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 |==> a < 0
+153:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 |==> a == 0
+154:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 |==> true
+155:LVR:0:POS:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> 1
+156:LVR:0:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> -1
+157:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:b <= 0 |==> b < 0
+158:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:b <= 0 |==> b == 0
+159:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:b <= 0 |==> true
+160:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 |==> a <= 0 != b <= 0
+161:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 |==> a <= 0
+162:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 |==> b <= 0
+163:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 |==> true
+164:LVR:0:POS:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> 1
+165:LVR:0:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> -1
+166:ROR:<=(int,int):<(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:c <= 0 |==> c < 0
+167:ROR:<=(int,int):==(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:c <= 0 |==> c == 0
+168:ROR:<=(int,int):TRUE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):32:c <= 0 |==> true
+169:COR:||(boolean,boolean):!=(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 || c <= 0 |==> (a <= 0 || b <= 0) != c <= 0
+170:COR:||(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 || c <= 0 |==> a <= 0 || b <= 0
+171:COR:||(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 || c <= 0 |==> c <= 0
+172:COR:||(boolean,boolean):TRUE(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):32:a <= 0 || b <= 0 || c <= 0 |==> true
+173:LVR:0:POS:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> 1
+174:LVR:0:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):32:0 |==> -1
+175:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@calculateArea(int,int,int):32:return Config.__M_NO == 0 && Config.COVERED(173, 174) ? 0 : Config.__M_NO == 174 ? -1 : Config.__M_NO == 173 ? 1 : 0; |==> <NO-OP>
+176:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b |==> a % b
+177:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b |==> a * b
+178:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b |==> a - b
+179:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b |==> a / b
+180:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c |==> a + b != c
+181:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c |==> a + b >= c
+182:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c |==> false
+183:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c |==> a % c
+184:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c |==> a * c
+185:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c |==> a - c
+186:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c |==> a / c
+187:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c > b |==> a + c != b
+188:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c > b |==> a + c >= b
+189:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + c > b |==> false
+190:COR:&&(boolean,boolean):==(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b |==> a + b > c == a + c > b
+191:COR:&&(boolean,boolean):FALSE(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b |==> false
+192:COR:&&(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b |==> a + b > c
+193:COR:&&(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b |==> a + c > b
+194:AOR:+(int,int):%(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c |==> b % c
+195:AOR:+(int,int):*(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c |==> b * c
+196:AOR:+(int,int):-(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c |==> b - c
+197:AOR:+(int,int):/(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c |==> b / c
+198:ROR:>(int,int):!=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c > a |==> b + c != a
+199:ROR:>(int,int):>=(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c > a |==> b + c >= a
+200:ROR:>(int,int):FALSE(int,int):triangle.UpgradedTriangle@calculateArea(int,int,int):34:b + c > a |==> false
+201:COR:&&(boolean,boolean):==(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b && b + c > a |==> (a + b > c && a + c > b) == b + c > a
+202:COR:&&(boolean,boolean):FALSE(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b && b + c > a |==> false
+203:COR:&&(boolean,boolean):LHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b && b + c > a |==> a + b > c && a + c > b
+204:COR:&&(boolean,boolean):RHS(boolean,boolean):triangle.UpgradedTriangle@calculateArea(int,int,int):34:a + b > c && a + c > b && b + c > a |==> b + c > a
+205:LVR:0:POS:triangle.UpgradedTriangle@calculateArea(int,int,int):35:0 |==> 1
+206:LVR:0:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):35:0 |==> -1
+207:STD:<RETURN>:<NO-OP>:triangle.UpgradedTriangle@calculateArea(int,int,int):35:return Config.__M_NO == 0 && Config.COVERED(205, 206) ? 0 : Config.__M_NO == 206 ? -1 : Config.__M_NO == 205 ? 1 : 0; |==> <NO-OP>
+208:AOR:+(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b |==> (double)a % (double)b
+209:AOR:+(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b |==> (double)a * (double)b
+210:AOR:+(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b |==> (double)a - (double)b
+211:AOR:+(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b |==> (double)a / (double)b
+212:AOR:+(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b + (double)c |==> ((double)a + (double)b) % (double)c
+213:AOR:+(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b + (double)c |==> ((double)a + (double)b) * (double)c
+214:AOR:+(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b + (double)c |==> (double)a + (double)b - (double)c
+215:AOR:+(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:(double)a + (double)b + (double)c |==> ((double)a + (double)b) / (double)c
+216:LVR:POS:0:triangle.UpgradedTriangle@calculateArea(int,int,int):38:2 |==> 0
+217:LVR:POS:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):38:2 |==> -2
+218:AOR:/(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:((double)a + (double)b + (double)c) / 2 |==> ((double)a + (double)b + (double)c) % 2
+219:AOR:/(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:((double)a + (double)b + (double)c) / 2 |==> ((double)a + (double)b + (double)c) * 2
+220:AOR:/(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:((double)a + (double)b + (double)c) / 2 |==> ((double)a + (double)b + (double)c) + 2
+221:AOR:/(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):38:((double)a + (double)b + (double)c) / 2 |==> ((double)a + (double)b + (double)c) - 2
+222:EVR:<NEW_CLASS(java.text.DecimalFormat)>:<DEFAULT>:triangle.UpgradedTriangle@calculateArea(int,int,int):39:new DecimalFormat("#.000") |==> null
+223:AOR:-(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - a |==> p % a
+224:AOR:-(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - a |==> p * a
+225:AOR:-(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - a |==> p + a
+226:AOR:-(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - a |==> p / a
+227:AOR:*(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) |==> p % (p - a)
+228:AOR:*(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) |==> p + (p - a)
+229:AOR:*(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) |==> p - (p - a)
+230:AOR:*(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) |==> p / (p - a)
+231:AOR:-(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - b |==> p % b
+232:AOR:-(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - b |==> p * b
+233:AOR:-(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - b |==> p + b
+234:AOR:-(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - b |==> p / b
+235:AOR:*(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) |==> p * (p - a) % (p - b)
+236:AOR:*(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) |==> p * (p - a) + (p - b)
+237:AOR:*(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) |==> p * (p - a) - (p - b)
+238:AOR:*(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) |==> p * (p - a) / (p - b)
+239:AOR:-(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - c |==> p % c
+240:AOR:-(double,double):*(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - c |==> p * c
+241:AOR:-(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - c |==> p + c
+242:AOR:-(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p - c |==> p / c
+243:AOR:*(double,double):%(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) % (p - c)
+244:AOR:*(double,double):+(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) + (p - c)
+245:AOR:*(double,double):-(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) - (p - c)
+246:AOR:*(double,double):/(double,double):triangle.UpgradedTriangle@calculateArea(int,int,int):40:p * (p - a) * (p - b) * (p - c) |==> p * (p - a) * (p - b) / (p - c)
+247:LVR:POS:0:triangle.UpgradedTriangle@calculateArea(int,int,int):40:0.5 |==> 0.0
+248:LVR:POS:NEG:triangle.UpgradedTriangle@calculateArea(int,int,int):40:0.5 |==> -0.5
+249:EVR:<METHOD_INVOCATION(double)>:<DEFAULT>:triangle.UpgradedTriangle@calculateArea(int,int,int):41:Double.parseDouble(df.format(area)) |==> 0.0
