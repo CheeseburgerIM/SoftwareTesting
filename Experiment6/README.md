@@ -11,3 +11,9 @@
 #### BeanShell
 
 实验中使用BeanShell测试的代码，包括注册测试和登陆测试
+
+#### Performance
+
+1.png：5×10压力测试
+
+2.png：50×20压力测试
